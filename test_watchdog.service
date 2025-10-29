@@ -1,0 +1,9 @@
+[Unit]
+Description=Test process monitor
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/test_watchdog.sh
+
+[Install]
+WantedBy=multi-user.target

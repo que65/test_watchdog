@@ -1,0 +1,9 @@
+[Unit]
+Description=Run test monitor every minute
+
+[Timer]
+Unit=test_watchdog.service
+OnCalendar=*-*-* *:*:00
+
+[Install]
+WantedBy=timers.target
